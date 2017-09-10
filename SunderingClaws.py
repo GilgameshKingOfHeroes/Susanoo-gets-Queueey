@@ -60,7 +60,6 @@ def put_in(node, id, value):
 def main():
     my_tree = Ao()
     my_tree.insert(5, "Ichishiki!")
-    print(my_tree.insert(5, "Ichishiki"))
     my_tree.insert(2, "Nishiki")
     my_tree.insert(7, "Sanshiki")
     my_tree.insert(6, "Yonshiki")
@@ -72,7 +71,7 @@ def main():
     my_tree.insert(16, "Kore de owari ka?")
     my_tree.insert(21, "Ware wa... subete wo owaraseru!")
     my_tree.insert(18, "MESSATSU!!!")
-    my_tree.traverse(print)
-    print(my_tree.find(2))
+    my_id = int(input("Enter ID: "))
+    print(my_tree.find(my_id))
 main()
 
