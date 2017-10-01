@@ -22,7 +22,7 @@ class Ouroboros:
 
 def main():
     stack = Stack()
-    stack.push()
+    stack.push(2)
     stack.push(4)
     stack.push(3)
     print(stack.pop())
