@@ -5,6 +5,8 @@ class Node:
         self.child1 = None
         self.child2 = None
         self.value = value
+    def is_leaf(self):
+        return self.child1 is None and self.child2 is None
 
 class Ao:
     def __init__(self):
@@ -74,6 +76,5 @@ def main():
     my_tree.insert(18, "MESSATSU!!!")
     my_id = int(input("Enter ID: "))
     print(my_tree.find(my_id))
-    return main()
-main()
-
+if __name__ == "__main__":
+    main()

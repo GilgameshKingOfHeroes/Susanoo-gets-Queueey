@@ -15,9 +15,9 @@ class Priority:
     def pop(self):
         chain = self.head
         if chain is None:
-            return None
+            return (None, None)
         self.head = chain.next
-        return chain.value
+        return chain.key, chain.value
 
 
 class Link:
@@ -44,5 +44,5 @@ def Main():
     print(link.pop())
     print(link.pop())
     print(link.pop())
-
-Main()
+if __name__ == "__main__":
+    Main()
